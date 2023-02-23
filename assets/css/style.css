@@ -1,0 +1,824 @@
+/*-------- global -------- */
+html{
+    font-family: iranyekan,'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .container-fluid {
+    background-color: #2c3e50;
+}
+
+/*-------- logo -------- */
+header .header .logo {
+    display: flex;
+    flex: 15%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header .header .logo i{
+    margin-left: .3rem;
+    font-size: 2.3rem;
+    color: #ecf0f1;
+}
+
+header .header .logo h3{
+    color: #ecf0f1;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/*-------- End global -------- */
+
+/*-------- menu -------- */
+header .header{
+    align-items: center;
+}
+
+header .menu{
+    display: flex;
+    margin: 1.5rem 0;
+    flex: 85%;
+}
+
+header .menu ul{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    font-weight: 300;
+}
+
+header .menu ul li a{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+header .menu ul span.pipe i{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #ecf0f1;
+    margin: 0 1.5rem;
+}
+
+/*-------- menu - btn -------- */
+header .menu ul li .new-ads{
+    padding: .5rem 1rem;
+    background-color: #405a73;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+/*-------- End menu -------- */
+
+/*-------- Start search -------- */
+header .container-fluid-search{
+    background-color: white;
+}
+
+header .search{
+    margin: 1.5rem 0;
+}
+
+header .search .form input,
+header .search .form select{
+    margin: 0 .5rem;
+    width: 150px;
+    padding: .4rem 1rem;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: .8rem;
+    border: 1px solid #ecf0f1;
+    color: #95a5a6;
+    background-color: white;
+    border-radius: 5px;
+    outline: 0;
+}
+
+header .search .form input::placeholder{
+    color: #95a5a6;
+}
+
+header .search .form a{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 1.2rem;
+    color: #2c3e50;
+}
+
+header .search .form span i{
+    margin: .2rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #95a5a6;
+}
+
+
+
+/*-------- btn search -------- */
+
+header .search .form button{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.05rem;
+    border: none;
+    margin: 0 1.2rem;
+    padding: .4rem 4rem;
+    border-radius: 5px;
+    color: #ecf0f1;
+    background-color: #e74c3c;
+}
+
+/*-------- End search -------- */
+
+/*-------- Start slider -------- */
+
+main .slider{
+    background: linear-gradient(to right, rgba(0,0,0,.6) , rgba(0,0,0,.7)) , url(/assets/images/house-geee4ed767_1920.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position-y: -14rem;
+    box-sizing: border-box;
+}
+
+.slider .slider-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    color: #ecf0f1;
+}
+
+.slider .slider-text p{
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+    margin: 3rem auto;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.slider .slider-text h2{
+    padding: 2rem 0;
+    padding-top: 0rem;
+    margin: 2rem auto;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.slider .slider-text .details{
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.slider .slider-text button{
+    font-family: inherit;
+    border: none;
+    padding: .6rem 3.5rem;
+    margin: 3.5rem auto;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background:none;
+    border: 1px solid #ecf0f1;
+    color: #ecf0f1;
+}
+
+/*-------- End slider -------- */
+
+/*-------- Star cards -------- */
+
+main section .container{
+    margin: 2rem auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .container .title{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem ;
+    align-items: center;
+    color: #2c3e50;
+}
+
+main .container .title h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+main .container .title h4{
+    font-size: 1.1rem;
+    letter-spacing: .4rem;
+    font-weight: 300;
+    color: #2c3e50;
+}
+
+/*-------- Star card -------- */
+
+main .spesial-offer{
+    margin-bottom: 2rem;
+}
+
+main .container .cards{
+    display: flex;
+    position: relative;
+}
+
+main .container .card{
+    position: relative;
+    width: 350px;
+    height: 425px;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 40px #00000038;
+    margin: 0 1rem;
+}
+
+main .container .card .layer h4.for-sell{
+    position: absolute;
+    background-color: rgba(44, 62, 80, .75);
+    padding: .5rem .5rem;
+    font-size: .9rem;
+    border-radius: 10px;
+    top: .5rem;
+    right: .5rem;
+    color: #ecf0f1;
+}
+
+main .container .card .layer i.icon-heart,
+main .container .card .layer i.icon-rec{
+    position: absolute;
+    color: #ecf0f1;;
+    font-size: 1.2rem;
+    opacity: .9;
+}
+
+main .container .card .layer i.icon-heart{
+    top: 12.3rem;
+    right: 1.5rem;
+}
+
+main .container .card .layer i.icon-rec {
+    top: 12.3rem;
+    right: 3.5rem;
+}
+
+main .container .card .layer h4{
+    position: absolute;
+    top: 12.3rem;
+    right: 15.5rem;
+    color: #ecf0f1;
+    font-weight: 500;
+}
+
+main .container .card .img-card img{
+    max-width: 100%;
+    height: 235px;
+    border-radius: 20px;
+    margin-bottom: .9rem;
+
+}
+
+main .card .card-body p.special-offer{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    margin-right: .5rem;
+    color: rgba(231, 76, 60, 1.0);
+}
+
+main .card .card-body h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    margin-right: .5rem;
+    color: #2c3e50;
+}
+
+main .card .card-body p.address{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    margin-right: .5rem;
+    color: #7f8c8d;
+}
+
+main .card .card-body small{
+    font-size: .9rem;
+    font-weight: 300;
+    margin-right: .5rem;
+    color: #7f8c8d;
+}
+
+main .card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem .8rem;
+    padding: 1rem 0;
+    color: #7f8c8d;
+    border-top: 1px solid #ecf0f1;
+}
+
+main .cards .dot{
+    position: absolute;
+    right: 550px;
+    top: 470px;
+    color: #bdc3c7;
+}
+
+main .cards .dot .active{
+    color: #2c3e50;
+}
+
+main section.bestselling{
+    margin: 8rem auto;
+}
+
+/*-------- End cards -------- */
+
+/*-------- Start show case -------- */
+
+main .showcases{
+    margin: 9rem auto;
+}
+
+main .showcase{
+    margin-top: 2rem;
+}
+
+.showcase .big-case{
+    position: relative;
+    width: 750px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px #00000016;
+    margin: 0 1rem;
+}
+
+.showcase .big-case img{
+    width: 100%;
+    height: 100%;
+}
+
+.showcase .big-case .text-big-case{
+    position: absolute;
+    top: 320px;
+    right: 300px;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase .big-case .text-big-case h3{
+    margin-bottom: .7rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.showcase .big-case .text-big-case small{
+    font-weight: 300;
+}
+
+.showcase .small-case{
+    position: relative;
+    width: 340px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px #00000016;
+    margin: 0 1rem;
+}
+
+.showcase .small-case img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.showcase .small-case .text-small-case{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 320px;
+    right: 95px;
+    color: #ecf0f1;
+}
+
+.showcase .small-case .text-small-case h3{
+    margin-bottom: .7rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.showcase .small-case .text-small-case small{
+    font-weight: 300;
+}
+
+/*-------- End show case -------- */
+
+
+/*-------- Start choice -------- */
+
+main .choice .title .sub-title{
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+}
+
+main .choice .container.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+main .choice .text-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #00000017;
+    margin: 0 1rem;
+}
+
+main .choice .text-card span i{
+    font-size: 3.2rem;
+    background-color: #e74d3c24;
+    color: #e74c3c;
+    padding: 1.7rem;
+    margin: 1.5rem auto;
+    border-radius: 100%;
+}
+
+main .choice .text-card h3{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #7f8c8d;
+}
+
+main .choice .text-card p{
+    margin: 0 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: .9rem;
+    color: #7f8c8d;
+    text-align: justify;
+}
+
+
+/*-------- End choice -------- */
+
+
+/*-------- Start comment -------- */
+
+main .comments{
+    background-color: #2c3e50;
+    padding-bottom: 1.2rem;
+}
+
+main .comment img{
+    background-color: #95a5a6;
+    padding: .3rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+main .comment .comment-title,
+main .comment p{
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+main .comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 1rem 1rem;
+}
+
+main .comments .comment .comment-title h4{
+    margin: 0 auto 1rem;
+}
+
+main .comments .comment .comment-title small{
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+main .comments .comment p{
+    margin: 1rem;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+main .comments .dot-comments{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main .dot-comments i{
+    margin: 0 .2rem;
+    color: #bdc3c7;
+}
+
+main .dot-comments i:last-child{
+    color: #2980b9;
+}
+
+/*-------- End comment -------- */
+
+/*-------- Start best price -------- */
+
+main .bestprice{
+    background: linear-gradient(to right,#FF5F6D,#FFC371);
+}
+
+main .bestprice .container{
+    margin: 0 auto;
+    padding: 3rem 0;
+    padding-bottom: 4.5rem;
+}
+
+main .bestprice .card{
+    background-color: white;
+}
+
+main .bestprice .title h3{
+    color: #ecf0f1;
+}
+
+main .bestprice .title h4{
+    letter-spacing: 0;
+    color: aliceblue;
+}
+
+/*-------- End best price -------- */
+
+/*-------- Start blog -------- */
+
+
+main .blog p.description{
+   text-align: justify;
+    margin: .6rem .5rem;
+    line-height: 1.2rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+main .blog .card{
+    height: 410px;
+}
+
+main .blog .card .card-footer{
+    display: flex;
+    align-items: center;
+    margin: .2rem .5rem;
+    padding: .2rem 0;
+}
+
+main .blog .card .card-footer span{
+    font-size: .9rem;
+}
+
+/*-------- End blog -------- */
+
+/*-------- Start partners -------- */
+
+main .partners .container{
+    margin: 7rem auto;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .partners .partner{
+    display: flex;
+}
+
+main .partners .title h4{
+    letter-spacing: 0;
+}
+
+main .partners .partner img{
+    width: 200px;
+    height: 200px;
+    margin: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+
+/*-------- End partners -------- */
+
+/*-------- Start ads -------- */
+
+main .ads-fluid{
+    background: linear-gradient(to right, #FF5F6D, #FFC371);
+}
+
+main .ads-fluid .ad{
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .ads-fluid .ad .ads-title{
+    width: 900px;
+}
+
+main .ads-fluid .ad .button{
+    width: 100px;
+}
+
+main .ads-fluid .ad .ads-title h3{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ecf0f1;
+}
+
+main .ads-fluid .ad .ads-title p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ecf0f1;
+}
+
+main .ad button{
+    padding: .3rem 2.2rem;
+    font-family: inherit;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background: none;
+    color: #ecf0f1;
+} 
+
+/*-------- End ads -------- */
+
+/*-------- Start footer -------- */
+
+footer{
+    padding: 2.5rem 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+footer .about-us{
+    width: 300px;
+    margin-left: 1rem;
+    padding: 0rem 3rem;
+}
+
+footer .contact-us{
+    width: 300px;
+}
+
+footer .footer-column{
+    width: 300px;
+}
+
+footer .about-us h3,
+footer .footer-column h3,
+footer .contact-us h3{
+    margin-bottom: .9rem;
+    font-size: 1.1rem;
+}
+
+footer .about-us p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+footer .contact-us p,
+footer .contact-us a{
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ecf0f1;
+}
+
+footer .footer-column .social a i{
+    color: #ecf0f1;
+    margin-bottom: 1rem;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+footer .footer-column .news input{
+    font-family: inherit;
+    border: none;
+    padding: .3rem 2rem;
+    background-color: #95a5a6;
+    border-radius: 5px;
+    margin-left: .3rem;
+}
+
+footer .footer-column .news input::placeholder{
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+footer .footer-column .news form{
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-column .news button{
+    background:none;
+    border: none;
+    font-size: 1.7rem;
+    color: #95a5a6;
+
+}
+
+/*-------- Start footer -------- */
+
+
+/* ---------------------------------------------- */
+/* --------------- Media Query ------------------ */
+/* ---------------------------------------------- */
+
+@media (max-width:768px){
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    header .header .logo {
+        display: flex;
+        flex: 100%;
+    }
+    header .menu {
+        display: flex;
+        flex: 100%;
+    }
+    header .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .container .cards{
+        flex-direction: column;
+    }
+    main .container .cards .dot{
+        display: none;
+    }
+    .showcase .big-case {
+        width: 700px;
+        height: 400px;
+    }
+    .showcase .small-case {
+        margin: 1rem auto;
+    }
+    main .partners .partner {
+        flex-direction: column;
+    }
+    main .ads-fluid .ad{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:452px){
+
+}
