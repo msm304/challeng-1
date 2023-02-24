@@ -6,6 +6,7 @@ html{
 a{
     text-decoration: none;
 }
+
 .container{
     max-width: 1200px;
     box-sizing: border-box;
@@ -156,9 +157,49 @@ header .menu-btn.ads-btn{
     color: white;
     margin-right: 3rem;
 }
-@media (min-width:768px){
+@media (min-width:769px){
     header .mobile-menu{
         display: none;
     }
 }
 /* ************* Filter ************* */
+.container.filter{
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container.filter select , .container.filter a , .container.filter button ,.container.filter input{
+    margin: 0 .8rem;
+    padding: .3rem 1.2rem;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+.container.filter a{
+    color: #34495e;
+    font-size: 1.1rem;
+    border: none;
+}
+.container.filter span i{
+    margin: 0 .3rem;
+}
+.container.filter button{
+    border: none;
+    background-color: #e74c3c;
+}
+.container.filter button a{
+    color: #ecf0f1;
+}
+@media (max-width:768px){
+        .container.filter select,
+        .container.filter a,
+        .container.filter button,
+        .container.filter input{
+        margin: 0 .4rem;
+        padding: .3rem .6rem;
+        }
+}
+@media (max-width:425px){
+    
+}
