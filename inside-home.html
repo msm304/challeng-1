@@ -13,24 +13,56 @@
   <body>
     
     <header class="container-fluid">
-        <div class="container">
+        <div class="container desk-menu">
             <div class="logo">
                 <i class="fa-solid fa-house"></i>
                 <h3>ایران هوم</h3>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">خانه</a></li>
-                    <li><a href="#">لیست</a></li>
-                    <li><a href="#">ویژگی</a></li>
-                    <li><a href="#">مقالات</a></li>
-                    <li><a href="#">تماس با ما</a></li>
-                    <li><a href="#">عضویت</a></li>
-                    <li><a href="#">ایجاد آگهی</a></li>
-                </ul>
+            <a class="menu-btn" href="#">خانه</a>
+            <div class="dropdown">
+                <button class="dropbtn">لیست <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">آیتم اول</a>
+                    <a href="#">آیتم دوم</a>
+                    <a href="#">آیتم سوم</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">ویژگی <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">آیتم اول</a>
+                    <a href="#">آیتم دوم</a>
+                    <a href="#">آیتم سوم</a>
+                </div>
+            </div>
+            <a class="menu-btn" href="#">مقالات</a>
+            <a class="menu-btn" href="#">تماس با ما</a>
+            <span>|</span>
+            <a class="menu-btn" href="#"><i class="fa-solid fa-user-plus"></i> عضویت</a>
+            <a class="menu-btn ads-btn" href="#"><i class="fa-solid fa-plus"></i> ایجاد آگهی</a>
+        </div>
+        <div class="mobile-menu">
+            <div class="topnav">
+                <a href="#home" class="active"><i class="fa-solid fa-house"></i> ایران هوم</a>
+                <div id="myLinks">
+                    <a href="#home">خانه</a>
+                    <a href="#list">لیست</a>
+                    <a href="#option">ویژگی</a>
+                    <a href="#blog">مقالات</a>
+                    <a href="#signup">عضویت</a>
+                    <a href="#ads">ایجاد آگهی</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
     </header>
 
+
+
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
