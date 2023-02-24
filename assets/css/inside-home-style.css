@@ -109,6 +109,7 @@ header .dropdown:hover .dropbtn {
 header .menu-btn.ads-btn{
     background-color: #425e79;
     padding: 1.1rem .9rem;
+    margin-right: .4rem;
 }
 @media (max-width:768px){
     header .container.desk-menu{
