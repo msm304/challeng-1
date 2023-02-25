@@ -201,5 +201,18 @@ header .menu-btn.ads-btn{
         }
 }
 @media (max-width:425px){
-    
+    .container.filter {
+        padding: 1.2rem .2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .container.filter select,
+    .container.filter a,
+    .container.filter button,
+    .container.filter input {
+        margin: .4rem;
+    }
+    .container.filter span i {
+        display: none;
+    }
 }
