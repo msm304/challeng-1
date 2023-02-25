@@ -262,11 +262,18 @@ main .container .info .info-price small{
     font-size: .7rem;
     font-weight: 300;
 }
+main .container .social-icon{
+    display: flex;
+}
+main .container .social-icon .in-soci-ico-first , main .container .social-icon .in-soci-ico-second{
+    margin: 0 .15rem;
+}
 main .container .social-icon i{
     color: #ecf0f1;
     background-color: #1abc9c;
     padding: .6rem;
     border-radius: 4px;
+    margin: 0 .3rem;
 }
 @media (max-width:768px){
     main .container{
@@ -279,10 +286,19 @@ main .container .social-icon i{
         line-height: 1.3rem;
         margin-bottom: .5rem;
     }
-    main .container .info{
-        flex-direction: column;
-    }
     main .container .social-icon i{
         margin-bottom: .3rem;
+    }
+}
+@media (max-width:425px){
+    main .container .social-icon{
+        display: flex;
+        flex-direction: column;
+    }
+    main .container .social-icon i {
+        margin: .3rem .15rem;
+    }
+    main .container .info{
+        flex-direction: column;
     }
 }
