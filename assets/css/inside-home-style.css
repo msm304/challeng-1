@@ -16,6 +16,9 @@ hr{
     margin: .6rem auto;
     opacity: .8;
 }
+form,input,select,button{
+    font-family: inherit;
+}
 .container{
     display: flex;
     max-width: 1200px;
@@ -302,6 +305,10 @@ main .container .social-icon i{
     main .container .social-icon i{
         margin-bottom: .3rem;
     }
+    main .container.con-info{
+        margin: 0 2rem;
+        padding-bottom: .1rem;
+    }
 }
 @media (max-width:425px){
     main .container .social-icon{
@@ -332,8 +339,11 @@ main .container .con-sidebar{
     padding: .8rem .6rem;
     border-radius: 7px;
     max-height: 610px;
+    margin-bottom: 1rem;
 }
-main .container .sidebar .send-massage > span{
+
+main .container .sidebar .send-massage > span,
+main .sidebars .sidebar span{
     display: block;
     margin-bottom: .8rem;
 }
@@ -370,31 +380,57 @@ main .container .sidebar .send-massage .info-person-detail span a{
     color: #e74c3c;
     font-size: .9rem;
 }
-main .container .sidebar .send-massage form{
+main .container .sidebar .send-massage form,
+.sidebars .sidebar form{
     display: flex;
     flex-direction: column;
 }
 main .container .sidebar .send-massage form input ,
-main .container .sidebar .send-massage form textarea{
+main .container .sidebar .send-massage form textarea,
+main .sidebars .sidebar input,
+main .sidebars .sidebar select{
     margin-bottom: .6rem;
     padding: .4rem .6rem;
     font-family: inherit;
     border: 1px solid #ecf0f1;
     border-radius: 5px;
+    outline: 0;
 }
 main .container .sidebar .send-massage form input::placeholder,
-main .container .sidebar .send-massage form textarea::placeholder{
+main .container .sidebar .send-massage form textarea::placeholder,
+main .sidebars .sidebar input::placeholder,
+main .sidebars .sidebar select{
     font-size: .7rem;
     font-weight: 300;
 }
-main .container .sidebar .send-massage form button{
+main .container .sidebar .send-massage form button,
+.sidebars .sidebar.towst form button{
     border: none;
     background-color: #e74c3c;
     color: #ecf0f1;
-    font-family: inherit;
     font-weight: 300;
     border-radius: 5px;
     padding: .4rem 0;
+}
+main .container .sidebar .send-massage form button:hover,
+.sidebars .sidebar.towst form button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.sidebars .sidebar.onest{
+    box-shadow: none
+}
+.sidebars .sidebar{
+    max-width: 267.38px;
+    padding: .8rem .6rem;
+    box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
+}
+.sidebars .sidebar.towst form .area{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebars .sidebar.towst .area input{
+    width: 110px;
 }
 /* ************* Content ************* */
 main .content{
@@ -404,6 +440,7 @@ main .content{
     border-radius: 7px;
     margin-right: .8rem;
     height: 910px;
+    margin-bottom: 1rem;
 }
 .inside-home .content .summ-detail-item {
     display: block;
@@ -464,6 +501,7 @@ main .content{
     background-color: #ecf0f1;
     padding: .6rem .4rem .6rem .8rem;
     border-radius: 100% 0 0 100% ;
+    margin-left: .3rem;
 }
 .content .attachment .attachment-item{
     display: flex;
@@ -471,11 +509,29 @@ main .content{
     font-size: .9rem;
     font-weight: 300;
 }
+.content .attachment .attachment-item span{
+    display: flex;
+    align-items: center;
+}
 @media (max-width:768px){
-    main .content{
-        order: 1;
-    }
     main .container.con-sidebar{
-        order: 2;
+        display: none
+    }
+    main .content{
+        margin: .2rem
+    }
+    .sidebars .sidebar.towst{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .content .detail-item .id-item .id-item-3st{
+        display: none;
+    }
+    .content .attachment .attachment-item i{
+        font-size: 1.2rem;
+    }
+    .content .attachment .attachment-item{
+        font-size: .8rem;
     }
 }
