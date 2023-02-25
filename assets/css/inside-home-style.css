@@ -117,7 +117,6 @@ header .menu-btn.ads-btn{
         display: none;
     }
 }
-
 /* hamburger menu */
 /* Style the navigation menu */
 .topnav {
@@ -183,10 +182,14 @@ header .menu-btn.ads-btn{
 }
 .container.filter span i{
     margin: 0 .3rem;
+    color: #bdc3c7;
 }
 .container.filter button{
     border: none;
     background-color: #e74c3c;
+}
+.container.filter button:hover{
+    opacity: .8;
 }
 .container.filter button a{
     color: #ecf0f1;
@@ -215,4 +218,53 @@ header .menu-btn.ads-btn{
     .container.filter span i {
         display: none;
     }
+}
+/* ************* Featuring image ************* */
+.container-fluid.inside{
+    width: 100%;
+    height: 500px;
+}
+.container-fluid.inside img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ************* info home ************* */
+main .container{
+    display: flex;
+    flex: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+}
+main .container .info{
+    display: flex;
+    flex: 30%;
+    justify-content: space-between;
+    color: #2c3e50;
+    align-items: center;
+}
+main .container .info .info-detail h3{
+    margin-bottom: .6rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+main .container .info .info-detail p{
+    font-size: .8rem;
+    font-weight: 300;
+}
+main .container .info .info-price{
+    margin-left: .9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+main .container .info .info-price small{
+    font-size: .7rem;
+    font-weight: 300;
+}
+main .container .social-icon i{
+    color: #ecf0f1;
+    background-color: #1abc9c;
+    padding: .6rem;
+    border-radius: 4px;
 }
