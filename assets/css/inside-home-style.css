@@ -6,13 +6,22 @@ html{
 a{
     text-decoration: none;
 }
-
+a,h1,h2,h3,h4,h5,h6,p{
+    color: #2c3e50;
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: #bdc3c7;
+    margin: .6rem auto;
+    opacity: .8;
+}
 .container{
+    display: flex;
     max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
 }
-
 /* ************* Header ************* */
 
 /* menu */
@@ -180,6 +189,10 @@ header .menu-btn.ads-btn{
     font-size: 1.1rem;
     border: none;
 }
+.container.filter .mobile-l a:hover{
+    background-color: #34495e;
+    color: white;
+}
 .container.filter span i{
     margin: 0 .3rem;
     color: #bdc3c7;
@@ -230,7 +243,7 @@ header .menu-btn.ads-btn{
     object-fit: cover;
 }
 /* ************* info home ************* */
-main .container{
+main .container.con-info{
     display: flex;
     flex: 70%;
     justify-content: space-between;
@@ -269,7 +282,7 @@ main .container .social-icon .in-soci-ico-first , main .container .social-icon .
     margin: 0 .15rem;
 }
 main .container .social-icon i{
-    color: #ecf0f1;
+    color: white;
     background-color: #1abc9c;
     padding: .6rem;
     border-radius: 4px;
@@ -300,5 +313,169 @@ main .container .social-icon i{
     }
     main .container .info{
         flex-direction: column;
+    }
+}
+/* ************* Inside home ************* */
+main .inside-home{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:768px){
+    main .inside-home{
+        flex-direction: column;
+    }
+}
+/* ************* Sidebar ************* */
+main .container .con-sidebar{
+    flex: 20%;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    padding: .8rem .6rem;
+    border-radius: 7px;
+    max-height: 610px;
+}
+main .container .sidebar .send-massage > span{
+    display: block;
+    margin-bottom: .8rem;
+}
+main .container .sidebar .send-massage .info-person{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    align-items: center;
+}
+main .container .sidebar .send-massage .info-person .info-img{
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+}
+main .container .sidebar .send-massage .info-person img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+main .container .sidebar .send-massage .info-person-detail{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    border-radius: 5px;
+}
+main .container .sidebar .send-massage .info-person-detail span{
+    margin-bottom: .6rem;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 0 .3rem;
+}
+main .container .sidebar .send-massage .info-person-detail span a{
+    color: #e74c3c;
+    font-size: .9rem;
+}
+main .container .sidebar .send-massage form{
+    display: flex;
+    flex-direction: column;
+}
+main .container .sidebar .send-massage form input ,
+main .container .sidebar .send-massage form textarea{
+    margin-bottom: .6rem;
+    padding: .4rem .6rem;
+    font-family: inherit;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+}
+main .container .sidebar .send-massage form input::placeholder,
+main .container .sidebar .send-massage form textarea::placeholder{
+    font-size: .7rem;
+    font-weight: 300;
+}
+main .container .sidebar .send-massage form button{
+    border: none;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    font-family: inherit;
+    font-weight: 300;
+    border-radius: 5px;
+    padding: .4rem 0;
+}
+/* ************* Content ************* */
+main .content{
+    flex: 80%;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    padding: .8rem .9rem;
+    border-radius: 7px;
+    margin-right: .8rem;
+    height: 910px;
+}
+.inside-home .content .summ-detail-item {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.inside-home .content .summ-detail-item span{
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    padding: .2rem .4rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.inside-home .content .description h3,
+.inside-home .content .detail-item h3,
+.inside-home .content .attachment h3{
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+.inside-home .content .detail-item h3,
+.inside-home .content .attachment h3{
+    margin-bottom: 1.3rem;
+}
+.inside-home .content .description p{
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin-bottom: .6rem;
+    text-align: justify;
+}
+.inside-home .content hr{
+    margin-bottom: 1.2rem;
+}
+.content .detail-item .id-item{
+    display: flex;
+    justify-content: space-between;
+}
+.content .detail-item .id-item .id-item-1st,
+.content .detail-item .id-item .id-item-2st,
+.content .detail-item .id-item .id-item-3st{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.content .detail-item .id-item .id-item-1st span,
+.content .detail-item .id-item .id-item-2st span,
+.content .detail-item .id-item .id-item-3st span{
+    margin-bottom: .9rem;
+}
+.content .detail-item .id-item .id-item-1st span i,
+.content .detail-item .id-item .id-item-2st span i,
+.content .detail-item .id-item .id-item-3st span i,
+.content .attachment .attachment-item i{
+    color: #e74c3c;
+}
+.content .attachment .attachment-item i{
+    font-size: 2rem;
+    background-color: #ecf0f1;
+    padding: .6rem .4rem .6rem .8rem;
+    border-radius: 100% 0 0 100% ;
+}
+.content .attachment .attachment-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    font-weight: 300;
+}
+@media (max-width:768px){
+    main .content{
+        order: 1;
+    }
+    main .container.con-sidebar{
+        order: 2;
     }
 }
