@@ -268,3 +268,21 @@ main .container .social-icon i{
     padding: .6rem;
     border-radius: 4px;
 }
+@media (max-width:768px){
+    main .container{
+        padding: 1.6rem 1.1rem;
+    }
+    main .container .info .info-detail h3 {
+        margin-bottom: .4rem;
+    }
+    main .container .info .info-detail p{
+        line-height: 1.3rem;
+        margin-bottom: .5rem;
+    }
+    main .container .info{
+        flex-direction: column;
+    }
+    main .container .social-icon i{
+        margin-bottom: .3rem;
+    }
+}
