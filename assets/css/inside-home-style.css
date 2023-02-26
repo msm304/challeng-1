@@ -180,7 +180,10 @@ header .menu-btn.ads-btn{
     justify-content: center;
     align-items: center;
 }
-.container.filter select , .container.filter a , .container.filter button ,.container.filter input{
+.container.filter select ,
+ .container.filter a ,
+ .container.filter button ,
+ .container.filter input{
     margin: 0 .8rem;
     padding: .3rem 1.2rem;
     font-family: inherit;
@@ -404,7 +407,8 @@ main .sidebars .sidebar select{
     font-weight: 300;
 }
 main .container .sidebar .send-massage form button,
-.sidebars .sidebar.towst form button{
+.sidebars .sidebar.towst form button,
+.main-content .comment-form form button{
     border: none;
     background-color: #e74c3c;
     color: #ecf0f1;
@@ -413,7 +417,8 @@ main .container .sidebar .send-massage form button,
     padding: .4rem 0;
 }
 main .container .sidebar .send-massage form button:hover,
-.sidebars .sidebar.towst form button:hover{
+.sidebars .sidebar.towst form button:hover,
+.main-content .comment-form form button:hover{
     opacity: .8;
     cursor: pointer;
 }
@@ -543,7 +548,8 @@ main .content{
 .main-content .location,
 .main-content .video,
 .main-content .distance,
-.main-content .one-comment{
+.main-content .one-comment,
+.main-content .enter-comment{
     box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
     padding: .8rem .9rem;
     border-radius: 7px;
@@ -594,7 +600,8 @@ main .content{
     margin-right: .7rem ;
  }
 .main-content .comment-star .main-star .star i,
-.main-content .one-comment .name-comment .star i{
+.main-content .one-comment .name-comment .star i,
+.main-content .comment-form .enter-rating .star i{
     color: #ecf0f1;
 }
 .main-content .comment-star .main-star .star i.active-star,
@@ -636,6 +643,46 @@ main .content{
     line-height: 1.6rem;
     margin-bottom: 1.5rem;
 }
+.main-content .comment-form h3{
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+    color: #34495e;
+}
+.main-content .comment-form .enter-rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main-content .comment-form .enter-rating span{
+    font-size: .9rem;
+    font-weight: 300;
+}
+.main-content .comment-form .enter-rating .star{
+    margin-right: .6rem;
+}
+.main-content .comment-form hr{
+    margin-bottom: 1.2rem;
+}
+.main-content .comment-form form{
+    display: flex;
+    flex-direction: column;
+}
+.main-content .comment-form form input,
+.main-content .comment-form form textarea{
+    margin-bottom: .6rem;
+    padding: .4rem .6rem;
+    font-family: inherit;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    outline: 0;
+}
+.main-content .comment-form form .button{
+    display: flex;
+    justify-content: left;
+}
+.main-content .comment-form form button{
+    width: 210px;
+}
 @media (max-width:768px){
     main .container.con-sidebar{
         display: none
@@ -664,10 +711,9 @@ main .content{
     .main-content .video{
         margin-bottom: 1rem;
     }
-    .main-content .distance{
-        margin-right: 0;
-    }
-    .main-content .one-comment{
+    .main-content .distance,
+    .main-content .one-comment,
+    .main-content .comment-form .enter-comment{
         margin-right: 0;
     }
 }
