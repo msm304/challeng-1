@@ -464,7 +464,7 @@ main .content{
 .inside-home .content .attachment h3,
 .main-content .content.attribute h3,
 .main-content .video h3,
- .main-content .distance h3{
+.main-content .distance h3{
     margin-bottom: 1.3rem;
 }
 .inside-home .content .description p{
@@ -661,6 +661,15 @@ main .content{
     .main-content .video video{
         width: 100%;
     }
+    .main-content .video{
+        margin-bottom: 1rem;
+    }
+    .main-content .distance{
+        margin-right: 0;
+    }
+    .main-content .one-comment{
+        margin-right: 0;
+    }
 }
 @media (max-width:425px) {
     main .content {
@@ -676,5 +685,20 @@ main .content{
     }
     .content .attachment .attachment-item{
         font-size: .8rem;
+    }
+    .main-content .distance .dis-detail h4 {
+        font-size: .9rem;
+    }
+    .main-content .distance .dis-item .dis-detail p{
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+    .main-content .main-detail{
+        flex-direction: column;
+    }
+    .main-content .one-comment .name-comment,
+    .main-content .comment-detail span{
+        display: flex;
+        justify-content: center;
     }
 }
