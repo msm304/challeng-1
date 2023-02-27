@@ -437,6 +437,20 @@ main .container .sidebar .send-massage form button:hover,
 .sidebars .sidebar.towst .area input{
     width: 110px;
 }
+.sidebars .sidebar.threest img{
+    margin-right: .5rem;
+}
+.sidebars .sidebar.fourst .cat{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+}
+.sidebars .sidebar.fourst .cat li{
+    margin-bottom: .8rem;
+}
+.sidebars .sidebar.fourst li a:hover{
+    color: #e74c3c;
+}
 /* ************* Content ************* */
 main .content{
     flex: 80%;
@@ -683,6 +697,9 @@ main .content{
 }
 .main-content .comment-form form button{
     width: 210px;
+}
+.main-content .enter-comment{
+    margin-bottom: 3rem;
 }
 @media (max-width:768px){
     main .container.con-sidebar,
