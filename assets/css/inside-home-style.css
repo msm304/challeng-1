@@ -582,7 +582,8 @@ main .content{
     font-size: .8rem;
     font-weight: 300;
  }
-.main-content .one-comment img{
+.main-content .one-comment img,
+.sidebars .sidebar.threest img{
     width: 250px;
     height: 130px;
     object-fit: cover;
@@ -684,7 +685,8 @@ main .content{
     width: 210px;
 }
 @media (max-width:768px){
-    main .container.con-sidebar{
+    main .container.con-sidebar,
+    .sidebars .sidebar.threest{
         display: none
     }
     main .content{
