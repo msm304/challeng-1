@@ -867,6 +867,12 @@ footer .footer-fluid-2st .copyright{
     .sidebars .sidebar.fourst{
         display: none;
     } 
+    footer .footer-fluid-2st .container{
+        justify-content: space-around;
+    }
+    footer .footer-fluid-2st .nav-botton ul{
+        padding-right: 0;
+    }
 }
 @media (max-width:425px){
     *{
