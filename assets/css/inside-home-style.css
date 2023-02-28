@@ -437,9 +437,9 @@ main .container .sidebar .send-massage form button:hover,
 .sidebars .sidebar.towst .area input{
     width: 110px;
 }
-.sidebars .sidebar.threest img{
+/* .sidebars .sidebar.threest img{
     margin-right: .5rem;
-}
+} */
 .sidebars .sidebar.fourst .cat{
     display: flex;
     justify-content: space-between;
@@ -597,7 +597,8 @@ main .content{
     font-weight: 300;
  }
 .main-content .one-comment img,
-.sidebars .sidebar.threest img{
+.sidebars .sidebar.threest img
+{
     width: 250px;
     height: 130px;
     object-fit: cover;
@@ -906,4 +907,95 @@ footer .footer-fluid-2st .copyright{
     footer .footer-fluid-2st .nav-botton ul a{
         padding: 0 .6rem;
     }
+}
+/* ************* Slider ************* */
+.sidebars .sidebar.threest{
+    margin-bottom: 1rem;
+}
+.sidebars .sidebar.threest img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.sliderside {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+}
+
+.sliderside ul {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 160px;
+    display: inline-block;
+    list-style: none;
+    background: #458;
+}
+
+.sliderside ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    float: left;
+    padding: 0;
+    width: 275px;
+    height: 165px;
+    background: #fff;
+    text-align: center;
+    line-height: 300px;
+    color: #333;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0px;
+    color: #34495e;
+    font-size: 1.5rem;
+}
+
+.next {
+    right: 0px;
+    color: #34495e;
+    font-size: 1.5rem;
+}
+
+.prev:hover,.next:hover{
+    color: white;
+}
+.c.c {
+    background: #222;
+    color: #fff;
+}
+
+.r.r {
+    background: red;
+    color: #fff;
+}
+
+.g.g {
+    background: #999;
+    color: #fff;
+}
+
+.b.b {
+    background: blue;
+    color: #fff;
 }
