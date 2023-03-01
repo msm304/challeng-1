@@ -341,9 +341,9 @@ main .inside-home{
 main .container .con-sidebar{
     flex: 20%;
     box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
-    padding: .8rem .6rem;
+    padding: .8rem 1rem;
     border-radius: 7px;
-    max-height: 610px;
+    height: 655px;
     margin-bottom: 1rem;
 }
 
@@ -408,6 +408,9 @@ main .sidebars .sidebar select{
     font-size: .7rem;
     font-weight: 300;
 }
+.sidebars .sidebar.towst{
+    padding: .8rem .6rem;
+}
 main .container .sidebar .send-massage form button,
 .sidebars .sidebar.towst form button,
 .main-content .comment-form form button{
@@ -428,8 +431,6 @@ main .container .sidebar .send-massage form button:hover,
     box-shadow: none
 }
 .sidebars .sidebar{
-    max-width: 267.38px;
-    padding: .8rem .6rem;
     box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
 }
 .sidebars .sidebar.towst form .area{
@@ -439,9 +440,9 @@ main .container .sidebar .send-massage form button:hover,
 .sidebars .sidebar.towst .area input{
     width: 110px;
 }
-/* .sidebars .sidebar.threest img{
-    margin-right: .5rem;
-} */
+.sidebars .sidebar.fourst{
+    padding: .8rem .6rem;
+}
 .sidebars .sidebar.fourst .cat{
     display: flex;
     justify-content: space-between;
@@ -602,9 +603,11 @@ main .content{
     font-size: .8rem;
     font-weight: 300;
  }
+.sidebar .sidebar .threest {
+    padding: .8rem .6rem;
+}
 .main-content .one-comment img,
-.sidebars .sidebar.threest img
-{
+.sidebars .sidebar.threest img{
     width: 250px;
     height: 130px;
     object-fit: cover;
