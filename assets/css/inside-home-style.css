@@ -3,6 +3,9 @@ html{
     font-family: iranyekan, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100%;
 }
+body{
+    margin: 0 0;
+}
 a{
     text-decoration: none;
 }
@@ -52,7 +55,6 @@ header .container ,header .logo , header .container .menu ul{
     align-items: center;
 }
 header .logo{
-    padding: 1.2rem 0;
     margin-left: 1rem;
 }
 header .logo i,header .logo h3{
