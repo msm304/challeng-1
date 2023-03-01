@@ -1,23 +1,5 @@
-// // hamburger menu
-// /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-  // function myFunction() {
-  //   var x = document.getElementById("myLinks");
-  //   if (x.style.display === "block") {
-  //     x.style.display = "none";
-  //   } else {
-  //     x.style.display = "block";
-  //   }
-  // }
-
-// sliderside
-// below code for preventing interference with wordpress
-
-
-// jQuery(document).ready(function () {
-//   let header = jQuery('header');
-// },
+// hamburger menu
 jQuery(document).ready(function () {
-  
 
   jQuery(".menu-btn.ads-btn").click(function (e) { 
     e.preventDefault();
@@ -39,12 +21,9 @@ jQuery(document).ready(function () {
     header.toggle();
   });
 
-
-
-
-
 });
 
+// slider
 var j = $.noConflict();
 
 j(document).ready(function () {
