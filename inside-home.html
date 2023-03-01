@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/iranyekan.css">
     <link rel="stylesheet" href="assets/css/Font Awesome Pro 6.2.1.css">
     <link rel="stylesheet" href="assets/css/inside-home-style.css">
@@ -42,48 +42,54 @@
             <a class="menu-btn ads-btn" href="#"><i class="fa-solid fa-plus"></i> ایجاد آگهی</a>
         </div>
         <div class="mobile-menu">
+            <div class="just-logo">
+            <a class="nav-icon"><i class="fa fa-bars"></i></a>
+            <a href="#logo" class="active"><i class="fa-solid fa-house"></i> ایران هوم</a>
+            </div>
             <div class="topnav">
-                <a href="#home" class="active"><i class="fa-solid fa-house"></i> ایران هوم</a>
-                <div id="myLinks">
-                    <a href="#home">خانه</a>
-                    <a href="#list">لیست</a>
-                    <a href="#option">ویژگی</a>
-                    <a href="#blog">مقالات</a>
-                    <a href="#signup">عضویت</a>
-                    <a href="#ads">ایجاد آگهی</a>
-                </div>
+                <ul id="myLinks">
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#list">لیست</a></li>
+                    <li><a href="#option">ویژگی</a></li>
+                    <li><a href="#blog">مقالات</a></li>
+                    <li><a href="#signup">عضویت</a></li>
+                    <li><a href="#ads">ایجاد آگهی</a></li>
+                </ul>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                <!-- </a> -->
             </div>
         </div>
     </header>
     <!-- filter -->
+  </form>
+    </div>
     <div class="container filter">
         <div class="mobile-l">
-        <input type="text" placeholder="عنوان آگهی ...">
-        <select name="typehome" id="typehome">
-            <option value="typehome">نوع ملک</option>
-            <option value="residential">مسکونی</option>
-            <option value="official">اداری</option>
-            <option value="commercial">تجاری</option>
-        </select>
-        </div>
-        <div class="mobile-l">
-        <select name="location" id="location">
-            <option value="location">موقعیت</option>
-            <option value="northOfCity">شمال شهر</option>
-            <option value="downtown">مرکز شهر</option>
-            <option value="southOfCity">جنوب شهر</option>
-        </select>
-        <select name="price" id="price">
-            <option value="price">قیمت</option>
-        </select>
-        <a href="#">پیشرفته</a>
-        </div>
-        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
-        <button><a href="#">جستجو</a></button>
+            <form action="">
+                <input type="text" placeholder="عنوان آگهی ...">
+                <select name="typehome" id="typehome">
+                    <option value="typehome">نوع ملک</option>
+                    <option value="residential">مسکونی</option>
+                    <option value="official">اداری</option>
+                    <option value="commercial">تجاری</option>
+                </select>
+                </div>
+                <div class="mobile-l">
+                <select name="location" id="location">
+                    <option value="location">موقعیت</option>
+                    <option value="northOfCity">شمال شهر</option>
+                    <option value="downtown">مرکز شهر</option>
+                    <option value="southOfCity">جنوب شهر</option>
+                </select>
+                <select name="price" id="price">
+                    <option value="price">قیمت</option>
+                </select>
+                <a href="#">پیشرفته</a>
+                </div>
+                <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                <button type="submit">جستجو</button>
+        </form>
     </div>
     <!-- featuring image -->
     <div class="container-fluid inside">

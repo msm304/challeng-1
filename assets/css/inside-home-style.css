@@ -132,43 +132,33 @@ header .menu-btn.ads-btn{
     }
 }
 /* hamburger menu */
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #34495e;
-    position: relative;
+header .just-logo{
+    display: flex;
+    align-items: center;
 }
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
+header .just-logo a{
+    color: #ecf0f1;
+    font-size: 1rem;
+    font-weight: 500;
 }
-/* Style navigation menu links */
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+header .nav-icon i{
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    padding: .6rem;
 }
-/* Style the hamburger menu */
-.topnav a.icon {
-    background: #34495e;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 5px;
+header .topnav{
+    display: flex;
+    flex-direction: column;
 }
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+header .topnav ul{
+    list-style: none;
+    padding: .2rem 1rem .6rem 0;
+    margin: 0;
 }
-/* Style the active link (or home/logo) */
-.active {
-    background-color: #34495e;
-    color: white;
-    margin-right: 3rem;
+header .topnav ul li a{
+    color: #ecf0f1;
+    font-size: .8rem;
+    font-weight: 300;
 }
 @media (min-width:769px){
     header .mobile-menu{
@@ -208,6 +198,9 @@ header .menu-btn.ads-btn{
 .container.filter button{
     border: none;
     background-color: #e74c3c;
+    color: #ecf0f1;
+    padding: .6rem 2.6rem;
+    font-size: 1.1rem;
 }
 .container.filter button:hover{
     opacity: .8;
