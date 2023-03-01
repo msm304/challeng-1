@@ -33,11 +33,11 @@ jQuery(document).ready(function () {
     e.preventDefault();
     alert("جستجو در فیلتر غیرفعال است");
   });
-  // jQuery("").click(function (e) {
-  //   e.preventDefault();
-  //   let header = jQuery(".myLinks");
-  //   header.hide();
-  // });
+  jQuery(".nav-icon").click(function (e) {
+    e.preventDefault();
+    let header = jQuery(".topnav");
+    header.toggle();
+  });
 
 
 

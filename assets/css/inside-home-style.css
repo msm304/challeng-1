@@ -145,10 +145,18 @@ header .nav-icon i{
     font-size: 1.2rem;
     color: #ecf0f1;
     padding: .6rem;
+    border-radius: 5px;
+    margin-left: .3rem;
+}
+header .nav-icon i:hover{
+    color: #34495e;
+    background-color: #ecf0f1;
+    border-radius: 5px;
 }
 header .topnav{
     display: flex;
     flex-direction: column;
+    display: none;
 }
 header .topnav ul{
     list-style: none;
